@@ -146,7 +146,7 @@ class CalorieTracker {
     const percentage = (this._totalCalories / this._calorieLimit) * 100;
     const width = Math.min(percentage, 100);
     progressEl.style.width = `${width}%`;
-    progressEl.innerText = `${width}%`;
+    progressEl.innerText = `${width.toFixed()}%`;
   }
 
   _displayNewMeal(meal) {
